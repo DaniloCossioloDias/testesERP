@@ -14,7 +14,7 @@ class TestEstoque(unittest.TestCase):
     # Teste incorreto: Verifica se o produto foi adicionado, mas com um valor errado para testar a falha
     def test_adicionar_produto_falha(self):
         quantidade = self.estoque.adicionar_produto("Produto B", 20)
-        self.assertEqual(quantidade, 25)  # Aqui estamos intencionalmente errando a quantidade (deveria ser 20)
+        self.assertEqual(quantidade, 25)  # erro intencional a quantidade (deveria ser 20)
 
     # Teste: Verifica se adicionar mais do mesmo produto aumenta a quantidade corretamente
     def test_adicionar_mais_produto(self):
